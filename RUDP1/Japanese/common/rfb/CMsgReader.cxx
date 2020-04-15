@@ -99,6 +99,8 @@ void CMsgReader::readRect(const Rect& r, unsigned int encoding)
   if (encoding == encodingCopyRect) {
     readCopyRect(r);
   } else {
+    if (encoding > encodingMax) // Fix CVE-2008-4770 JVNDB-2009-001024 by dnobori 2020/4/15 https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001024.html
+      throw Exception("Unknown rect encoding");
     if (!decoders[encoding]) {
       decoders[encoding] = Decoder::createDecoder(encoding, this);
       if (!decoders[encoding]) {

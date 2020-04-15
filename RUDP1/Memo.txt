@@ -1,0 +1,4 @@
+﻿ベースは vnc-4_1_2-winsrc であるが、以下の脆弱性対策をしている。
+
+Fix CVE-2008-4770 JVNDB-2009-001024 by dnobori 2020/4/15 https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001024.html
+
