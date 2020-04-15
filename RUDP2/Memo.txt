@@ -1,3 +1,8 @@
 ﻿ビルドは
 ReleaseNoUnicode - Win32
 版を利用する。
+
+Visual Studio 2008 を Windows 7 上で用いてビルドすることを推奨する。
+(それ以降だとビルドが正常に完了しないことがある。
+ DirectX SDK 関係の問題であると考えられる。)
+
