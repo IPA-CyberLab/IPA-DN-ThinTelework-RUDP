@@ -1,0 +1,3 @@
+﻿ビルドは
+ReleaseNoUnicode - Win32
+版を利用する。
